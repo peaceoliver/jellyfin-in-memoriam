@@ -43,4 +43,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-For more information about releases, please visit the [GitHub Releases](https://github.com/peaceoliver/Jellyfin.Plugin.InMemoriam/releases) page.
+For more information about releases, please visit the [GitHub Releases](https://github.com/peaceoliver/jellyfin-in-memoriam/releases) page.

@@ -5,7 +5,7 @@
 /// </summary>
 /// <remarks>
 /// License: MIT
-/// Repository: https://github.com/YOUR_USERNAME/Jellyfin.Plugin.InMemoriam
+/// Repository: https://github.com/peaceoliver/jellyfin-in-memoriam
 /// Contributors: Feel free to fork, use, and submit pull requests to improve this plugin!
 /// For more information, see the README.md and CONTRIBUTING.md files.
 /// </remarks>

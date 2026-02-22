@@ -16,12 +16,12 @@
       "TargetAbi": "10.10.3",
       "Checksum": "988c7c620838057d21cc33b2d1fc741a294655f4c9a643722123b1fd880abf24",
       "Timestamp": "2026-02-22T00:00:00Z",
-      "ImageUrl": "https://raw.githubusercontent.com/peaceoliver/Jellyfin.Plugin.InMemoriam/main/icon.png",
+      "ImageUrl": "https://raw.githubusercontent.com/peaceoliver/jellyfin-in-memoriam/main/icon.png",
       "PluginStore": false,
       "Sources": [
         {
           "Name": "GitHub",
-          "Url": "https://github.com/peaceoliver/Jellyfin.Plugin.InMemoriam"
+          "Url": "https://github.com/peaceoliver/jellyfin-in-memoriam"
         }
       ],
       "Packages": [
@@ -32,7 +32,7 @@
           "Checksum": "988c7c620838057d21cc33b2d1fc741a294655f4c9a643722123b1fd880abf24",
           "Changelog": "Initial release",
           "TargetFramework": "net8.0",
-          "Url": "https://github.com/peaceoliver/Jellyfin.Plugin.InMemoriam/releases/download/v1.0.0/Jellyfin.Plugin.InMemoriam.dll"
+          "Url": "https://github.com/peaceoliver/jellyfin-in-memoriam/releases/download/v1.0.0/Jellyfin.Plugin.InMemoriam.dll"
         }
       ]
     }

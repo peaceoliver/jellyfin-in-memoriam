@@ -20,7 +20,7 @@ A Jellyfin plugin that automatically creates a collection of movies featuring re
 
 ### Steps
 
-1. Download the latest release from the [Releases](https://github.com/peaceoliver/Jellyfin.Plugin.InMemoriam/releases) page
+1. Download the latest release from the [Releases](https://github.com/peaceoliver/jellyfin-in-memoriam/releases) page
 2. Extract the `.dll` file and any dependencies
 3. Place them in your Jellyfin plugins directory:
    - **Linux/Docker**: `/var/lib/jellyfin/plugins/`
@@ -37,7 +37,7 @@ You can also add this plugin repository directly in Jellyfin for automatic updat
 2. Click the **+** button to add a new repository
 3. Enter the repository URL:
    ```
-   https://raw.githubusercontent.com/peaceoliver/Jellyfin.Plugin.InMemoriam/main/manifest.json
+   https://raw.githubusercontent.com/peaceoliver/jellyfin-in-memoriam/main/manifest.json
    ```
 4. Click **Add**
 5. Go to **Catalog** tab
@@ -130,7 +130,7 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 For issues, feature requests, or questions:
 
-1. Check existing [Issues](https://github.com/peaceoliver/Jellyfin.Plugin.InMemoriam/issues)
+1. Check existing [Issues](https://github.com/peaceoliver/jellyfin-in-memoriam/issues)
 2. Create a new issue with detailed information about your problem
 
 ## Related Projects
