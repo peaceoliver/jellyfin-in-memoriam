@@ -11,8 +11,8 @@
         "version": "1.0.0.0",
         "changelog": "Initial release - Automatic detection of recently deceased actors based on configurable lookback period",
         "targetAbi": "10.10.3.0",
-        "sourceUrl": "https://github.com/peaceoliver/jellyfin-in-memoriam/releases/download/v1.0.0/Jellyfin.Plugin.InMemoriam.dll",
-        "checksum": "fff9a160c6d363c245261c49b44d8599",
+        "sourceUrl": "https://github.com/peaceoliver/jellyfin-in-memoriam/releases/download/v1.0.0/Jellyfin.Plugin.InMemoriam_1.0.0.0.zip",
+        "checksum": "fdd3daea2410f69894eb0c8c67eea084",
         "timestamp": "2026-02-22T00:00:00Z"
       }
     ]
