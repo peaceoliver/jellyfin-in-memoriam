@@ -6,7 +6,6 @@
     "overview": "The In Memoriam plugin automatically creates a collection of movies featuring recently deceased actors, pulling metadata from TheMovieDB. It runs on server startup and daily to keep the collection current.",
     "owner": "peaceoliver",
     "category": "Collections",
-    "imageUrl": "https://raw.githubusercontent.com/peaceoliver/jellyfin-in-memoriam/main/icon.png",
     "versions": [
       {
         "version": "1.0.0.0",
