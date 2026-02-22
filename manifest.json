@@ -1,0 +1,40 @@
+{
+  "Name": "In Memoriam Repository",
+  "Description": "Repository for the Jellyfin In Memoriam Plugin",
+  "Version": "1.0.0",
+  "Manifest": [
+    {
+      "Name": "In Memoriam",
+      "Description": "Automatically creates a collection of movies featuring recently deceased actors. Uses TheMovieDB metadata to identify actors who have passed away within a configurable timeframe.",
+      "Version": "1.0.0",
+      "Author": "peaceoliver",
+      "Overview": "The In Memoriam plugin automatically creates a collection of movies featuring recently deceased actors, pulling metadata from TheMovieDB. It runs on server startup and daily to keep the collection current.",
+      "Category": "Collections",
+      "Changelog": "Initial release - Automatic detection of recently deceased actors based on configurable lookback period",
+      "Id": "Jellyfin.Plugin.InMemoriam",
+      "Guid": "30ae6b4c-622f-4d77-aa37-97dd638d78d0",
+      "TargetAbi": "10.10.3",
+      "Checksum": "FDFC014B75B7573539487AB76264D6552A212A7624534C0B2DC46A2D6A3CA28B",
+      "Timestamp": "2026-02-22T00:00:00Z",
+      "ImageUrl": "https://raw.githubusercontent.com/peaceoliver/Jellyfin.Plugin.InMemoriam/main/icon.png",
+      "PluginStore": false,
+      "Sources": [
+        {
+          "Name": "GitHub",
+          "Url": "https://github.com/peaceoliver/Jellyfin.Plugin.InMemoriam"
+        }
+      ],
+      "Packages": [
+        {
+          "Name": "Jellyfin.Plugin.InMemoriam",
+          "Version": "1.0.0",
+          "TargetAbi": "10.10.3",
+          "Checksum": "FDFC014B75B7573539487AB76264D6552A212A7624534C0B2DC46A2D6A3CA28B",
+          "Changelog": "Initial release",
+          "TargetFramework": "net8.0",
+          "Url": "https://github.com/peaceoliver/Jellyfin.Plugin.InMemoriam/releases/download/v1.0.0/Jellyfin.Plugin.InMemoriam.dll"
+        }
+      ]
+    }
+  ]
+}

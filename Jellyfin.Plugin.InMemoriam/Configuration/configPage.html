@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>In Memoriam Settings</title>
+</head>
+<body>
+    <div data-role="page" class="page type-interior pluginConfigurationPage" data-require="emby-input,emby-button">
+        <div data-role="content">
+            <div class="content-primary">
+                <form class="inMemoriamConfigForm">
+                    <div class="inputContainer">
+                        <label class="inputLabel" for="LookbackDays">Lookback Period (Days)</label>
+                        <input is="emby-input" type="number" id="LookbackDays" name="LookbackDays" min="1" label="Days to look back for deaths:"/>
+                        <div class="fieldDescription">How many days ago should the plugin check for actor deaths?</div>
+                    </div>
+                    <div>
+                        <button is="emby-button" type="submit" class="raised button-submit block">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var InMemoriamConfig = {
+                pluginId: "30ae6b4c-622f-4d77-aa37-97dd638d78d0"
+            };
+
+            $('.pluginConfigurationPage').on('pageshow', function () {
+                var page = this;
+                ApiClient.getPluginConfiguration(InMemoriamConfig.pluginId).then(function (config) {
+                    var lookback = Number(config.LookbackDays);
+                    $('#LookbackDays', page).val(Number.isFinite(lookback) && lookback > 0 ? lookback : 90);
+                });
+            });
+
+            $('.inMemoriamConfigForm').on('submit', function () {
+                var page = $(this).parents('.page');
+                ApiClient.getPluginConfiguration(InMemoriamConfig.pluginId).then(function (config) {
+                    var lookback = Number($('#LookbackDays', page).val());
+                    config.LookbackDays = Number.isFinite(lookback) ? lookback : 90;
+                    ApiClient.updatePluginConfiguration(InMemoriamConfig.pluginId, config).then(Dashboard.processPluginConfigurationUpdateResult);
+                });
+                return false;
+            });
+        </script>
+    </div>
+</body>
+</html>

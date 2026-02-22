@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <AssemblyName>Jellyfin.Plugin.InMemoriam</AssemblyName>
+    <RootNamespace>Jellyfin.Plugin.InMemoriam</RootNamespace>
+    
+    <!-- Package metadata for GitHub -->
+    <Title>Jellyfin In Memoriam Plugin</Title>
+    <Description>A Jellyfin plugin that automatically creates a collection of movies featuring recently deceased actors. Uses TheMovieDB metadata to identify actors who have passed away within a configurable timeframe.</Description>
+    <Version>1.0.0</Version>
+    <Authors>Your Name</Authors>
+    <PackageProjectUrl>https://github.com/YOUR_USERNAME/Jellyfin.Plugin.InMemoriam</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/YOUR_USERNAME/Jellyfin.Plugin.InMemoriam</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>jellyfin;plugin;movies;actors</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Designed and tested for Jellyfin 10.10.3 with .NET 8. May work with newer 10.x versions, but will stop at 11.0 (which requires .NET 9) -->
+    <PackageReference Include="Jellyfin.Controller" Version="[10.10.3, 11.0)" />
+    <PackageReference Include="Jellyfin.Model" Version="[10.10.3, 11.0)" />
+    <!-- Allow any 8.x version of this .NET 8 library -->
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Configuration/configPage.html" />
+  </ItemGroup>
+
+</Project>
