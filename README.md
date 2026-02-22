@@ -29,7 +29,9 @@ A Jellyfin plugin that automatically creates a collection of movies featuring re
 4. Restart Jellyfin
 5. Navigate to Admin > Dashboard > Plugins and enable the "In Memoriam" plugin
 
-### Alternative: Install via Plugin Repository
+### Alternative: Install via Plugin Repository (currently not working)
+
+This option is currently not working. The repository entry is listed, but the plugin does not load. Use the manual install steps above until this is fixed.
 
 You can also add this plugin repository directly in Jellyfin for automatic updates:
 
